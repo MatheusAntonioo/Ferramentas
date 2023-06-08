@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  display: flex;
+  padding: 6%;
+  align-items: center;
+  justify-content: center;
+  background-color: #999999;
+  transition: background 0.4s ease-in;
+}
+
+/*------------------ CONTATO -------------------*/
+.main-contact{
+  display: grid;
+  place-items: center;
+  width: 600px;
+  padding: 2rem;
+  margin-bottom: 150px;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.main-contact form{
+  width: 100%;
+  max-width: 30rem;
+}
+.main-contact label,
+.main-contact input,
+.main-contact textarea,
+.main-contact button{
+  display: block;
+}
+.main-contact input,
+.main-contact textarea,
+.main-contact button{
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+.main-contact input,
+.main-contact textarea{
+  margin-bottom: 1rem;
+  color: #1f1f1f;
+  background-color: #b0b0b0;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s,
+  box-shadow 0.3s;
+}
+.main-contact input:hover,
+.main-contact input:focus,
+.main-contact textarea:hover,
+.main-contact textarea:focus{
+  outline: none;
+  border-color: #999999;
+  box-shadow: 0 0 0 0.1125rem #3d4c41;
+}
+.main-contact label{
+  margin-bottom: 0.5rem;
+  color: #1f1f1f;
+  font-size: 18px;
+}
+.main-contact textarea{
+  min-height: 12.5rem;
+  resize: vertical;
+}
+.main-contact button{
+  border: none;
+  border-radius: 99px;
+  color: #e6e6e6;
+  background: #3d4c41;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-contact button:hover,
+.main-contact button:focus{
+  outline: none;
+  background: #26332a;
+}
+
+/*--------------------- THANKS ------------------*/
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #26332a;
+  width: 100%;
+  margin-bottom: 150px;
+  padding: 1.5rem;
+}
+.thanks h1{
+  font-size: 50px;
+  padding-bottom: 2rem;
+}
+.thanks h2{
+  padding-bottom: 1.125rem;
+  font-size: 22px;
+}
+.thanks h3{
+  padding-bottom: 150px;
+  font-size: 18px;
+}
+.thanks a{
+  background-color: #3d4c41;
+  color: #e6e6e6;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-weight: bold
+}
+.thanks i{
+  padding-right: 10px;
+  font-size: 25px;
+}
+.thanks a:hover,
+.thanks a:focus{
+  background: #26332a;
+}

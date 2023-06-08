@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="/formulário/style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  
+  <main>
+    <section class="main-contact">
+      <form 
+        action="https://formsubmit.co/seu@email.com" 
+        method="POST"
+      > <!-- Colocar o email do cliente e autorizar com primeiro envio -->
+        <input type="hidden" name="_subject" value="Novo Cliente"> <!-- titulo do email -->
+        
+        <label>Nome</label>
+        <input type="text" name="nome" autocomplete="off" placeholder="Digite seu nome" required >
+
+        <label>Email</label>
+        <input type="email" name="email" autocomplete="email" placeholder="Digite seu e-mail" required>
+
+        <label>Telefone</label>
+        <input type="tel" name="telefone" autocomplete="tel" pattern="^\d{10, 11}$" placeholder="(xx) xxxxx-xxxx" required >
+
+        <label>Mensagem</label>
+        <textarea name="mensagem" placeholder="Descreva aqui o serviço que você deseja!" required></textarea>
+
+        <button type="submit" >Enviar</button>
+
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/formul%C3%A1rio/thanks.html">
+        <!-- Redireciona o cliente para outra pagina, pagina thanks -->
+
+        <input type="hidden" name="_captcha" value="false">
+        <!-- desativa o captcha -->
+
+      </form>
+
+      
+    </section>
+  </main>
+
+</body>
+</html>
