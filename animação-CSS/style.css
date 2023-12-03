@@ -5,12 +5,7 @@
 
 :root {
   --grey: #383B3E;
-  --black: #0B0B0B;
-  --green: #A3FDA1;
   --yellow: #FFD700;
-  --purple: #925FF0;
-  --red: #FF6F61;
-  --white: #f4f4f4;
 }
 
 body {
@@ -21,11 +16,8 @@ body {
 
 .container {
   width: 1000px;
-  /* height: 100vh; */
-  margin-top: 100px;
-  /* background-color: aqua; */
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 
